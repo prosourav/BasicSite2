@@ -1,0 +1,210 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    margin: 8px 34px;
+}
+#logo p{
+    flex-direction: column;
+    margin: -5px -4px;
+    font-size:20px ;
+    color:white;
+}
+#logo img{
+    height: 45px;
+    margin: -4px 13px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 28px;
+}
+#navbar ul li a{
+    color:orange;
+    display: block;
+    text-decoration: none;
+    padding:18px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:rgb(62, 109, 238);
+    background-color: whitesmoke;
+}
+ #navbar::before{
+     content:" ";
+     background-color:black;
+     position: absolute;
+     top: 0px;
+     left:0px;
+     height: 100%;
+     width:100%;
+     z-index: -1;
+     opacity: 0.2;
+ }  
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 120px;
+     height: 310px;
+     justify-content: center;
+     align-items: center;
+ } 
+ #home::before{
+     content:" ";
+     position: absolute;
+     background: url('page1.jpg') no-repeat center center/cover;
+     height:615px;
+     top:0px;
+     left:0px;
+     width:100%;
+     z-index: -1;
+     opacity: 0.89;
+ }
+ #home h1{
+     color: white;
+     text-align: center;
+     font-size: 48px;
+ }
+ #home p{
+     color:rgb(240, 200, 200);
+     font-size: 18px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ #home button{
+    background-color: rgb(179, 2, 2);
+    height: 54px;
+    font-size: 24px;
+    width: 120px;
+    color: wheat;
+    border-radius: 20px;
+ }
+ #home button:hover{
+     cursor: pointer;
+     background: rgba(120, 255, 79, 0.89);
+     color: rgb(179, 2, 2);
+ }
+.sec{
+    text-align: center;
+}
+ #Clients-sec{
+     text-align: center;
+     border: 2px solid red;
+     border-radius: 8px;
+ }
+ #Clients-sec .h-main{
+     font-size: 45px;
+     padding: 5px;
+     margin-top: 33px
+ }
+
+#Clients{
+    padding:26px 22px ;
+    margin:0px 22px;
+    display: flex;
+    text-align: center;
+  
+}
+#Clients .box{
+    border: 2px solid darkgreen;
+    padding: 5px;
+    margin: 2px 10px;
+    border-radius: 8px;
+    background-color:rgb(255, 202, 133);
+    margin-bottom: 12px;
+}
+#Clients .box img{
+    height: 135px;
+    display: block;
+    margin: auto;
+}
+.h-secondary{
+    text-align: center;
+}
+#AboutUs{
+    text-align: center;
+    font-size: 32px;
+    height: 350px;
+    color: cornsilk;
+    margin-top: 6px;
+    position: relative;
+    margin-bottom: 0.5vmin;
+}
+#AboutUs::before{
+    content:" ";
+    position: absolute;
+    left: 0px;
+    background: url('page2.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#AboutUs .con{
+    padding-top: 4rem;
+}
+#AboutUs .con p{
+   font-size: 20px;
+}
+#ContactUs{
+    text-align: center;
+    position: relative;
+    height:35rem ;
+}
+
+#ContactUs::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    background: url('10.jpg') no-repeat center center/cover;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    left: 0;
+}
+#ContactUs h1{
+    color: black;
+    margin-top: 2px;
+    font-size:45px ;
+}
+#Contact-box{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    padding-top: 54px;
+}
+#Contact-box input,
+#Contact-box textarea{
+    width: 100%;
+    padding: 6px;
+    border-radius: 22px;
+    font-size: 17px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+#Contact-box label{
+    font-size: 1.5rem;
+    color: black;
+}
+
+footer{
+    background: darkred;
+    color:wheat;
+    height: 25px;
+    font-size: 20px;
+}
+.center{
+text-align: center;
+}
